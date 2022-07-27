@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-size: 10px;
+}
+
+
+body {
+    width: 100%;
+    background-color:#0e2d34;
+    padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+}
+
+h1,
+h2 {
+
+    color: white;
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+}
+
+
+li{
+    
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 1rem;
+    
+}
+
+
+
+p {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.info_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+.textarea_container {
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.container{
+    height: 20vh;   
+}
+
+
+
+
+
+
+footer {
+   
+   
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+
+
+}
+
+
+.text_area {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 90%;
+    resize: none;
+    height: 50%;
+    margin-bottom: 2rem;
+
+
+}
+
+.generator-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+button{
+    background-color: transparent;
+    border: solid white 0.2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    color: white;
+
+}
+
+.copy {
+  
+    width:50%;
+    margin: 0 auto;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 0rem 1.5rem 0rem;
+}
+
+img{
+    margin: 0 auto;
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(141deg) brightness(103%) contrast(101%);
+}
+
+.about{
+    margin-top: 1.5rem;
+}
+    
+footer > p{
+    font-size: 1.5rem;
+}
+
+
+@media (min-width: 1000px) and (orientation: landscape){
+
+
+ 
+    .info_container{
+        justify-content: center;
+        /* height: 25vh; */
+    }
+
+    .textarea_container {
+        margin-top: 0;
+        display: flex;
+        height: 42vh;
+        align-items: flex-start;
+        justify-content: space-evenly;
+
+    }
+
+    .container {
+        display: flex;
+        max-width: 30rem;
+        height: 90%;
+ 
+    }
+
+    h1,h2{
+        font-size: 2.8rem;
+    }
+
+    li{
+        font-size: 2.4rem;
+    }
+
+    button{
+        font-size: 1.5rem;
+    }
+    textarea{
+        font-size: 1.5rem;
+
+    }
+
+
+}
+
+@media (min-width: 1300px) and (orientation: landscape){
+
+    .body{
+        padding: 2rem 2rem 2rem 2rem;
+    }
+    .textarea_container {
+        display: flex;
+        height: 55vh;
+        align-items: center;
+        justify-content: center;
+
+    }
+   
+    .container {
+        display: flex;
+        max-width: unset;
+        width: 30vw;
+        height: 95%;
+ 
+    }
+    h1{
+        margin-top: 3rem;
+    }
+
+    h1,h2{
+        text-align: left;
+        margin-left: 3rem;
+    }
+
+    ul{
+        margin-top: 3rem;
+    }
+    li{
+        margin-left: 3rem;
+        text-align: left;
+        margin-top: 1rem;
+    }
+
+    button{
+        font-size: 2rem;
+    }
+    textarea{
+        font-size: 2rem;
+
+    }
+
+    .about > p {
+        text-align: left;
+        margin-left: 3rem;
+    }
+
+    .about{
+        margin-bottom: 5.5rem;
+    }
+
+
+}
