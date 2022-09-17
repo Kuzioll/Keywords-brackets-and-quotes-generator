@@ -2,58 +2,72 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Document</title>
 </head>
 
 <body>
-
-    <div class="info_container">
-        <h1>Keywords brackets and quotes generator</h1>
-        <h2>How te program works:</h2>
-        <ul>
-            <li>1. Type all your keywords or copy them to Borad Match.</li>
-            <li>2. After that click button generate, and copy selected type of match. For that you can use buttons under the tables</li>
-        </ul>
-    </div>
-
-
-    <div class="textarea_container">
-        <div class="board-match-container container">
-            <p>Put you board match phrase</p>
-            <textarea class="text_area board_match" name="board_match" id="board_match" cols="1"></textarea>
-            <div class="generator-container"><button class="generator">Generate</button></div>
-        </div>
-        <div class="phrase-match-container container">
-            <p>Here will generate phrase match</p>
-            <textarea class="text_area phrase_box" name="phrase_match" id="phrase_box" cols="1"></textarea>
-            <button class="copy-phrase-match copy">Copy phrase match</button>
-        </div>
-        <div class="exact-match-container container">
-            <p>Here will generate exact match </p>
-            <textarea class="text_area" name="exact_match" id="match_box" cols="1"></textarea>
-            <button class="copy-exact-match copy">Copy exact match</button>
-        </div>
-    </div>
+  <div class="wraper">
     <div class="about">
-        <h2>About me</h2>
-        <p>My name is Jakub I created these simple web app to help everybody that strguled with adding all nescesary symbols to the keywords for google. I hope that it will help you with your work. All my projects are free to use and the source code is available on Github where you can download it and edit at your free will. Wish you great day!</p>
-        <a href="https://github.com/Kuzioll"><img src="/Keywords-brackets-and-quotes-generator/iconmonstr-github-1.svg" alt=""></a>
+      <a href="https://github.com/Kuzioll/">
+        <i class="icon-mobile"><img src="/Keywords-brackets-and-quotes-generator/iconmonstr-github-1.svg" alt="" /></i>
+      </a>
+      <h1>Google AdWords Keyword Tool</h1>
+      <h2>About the tool</h2>
+      <p>
+        I have created a simple program to help you wrap your keywords phrases
+        in 'quotation marks' and [square brackets]. I hope it will help you
+        with your work on campagins.
+      </p>
+      <h3>How to use keyword tool</h3>
+      <ol>
+        <li>
+          Type or paste all your keywords to first table. <b>Remember</b> to
+          put one keyword per row. Dont worry about any free spaces between
+          the rows and spaces at the end of words. Program will remove them.
+          them.
+        </li>
+        <li>Click button generate.</li>
+        <li>
+          Copy selected type of match you need. If you want, You can use for
+          that buttons that are loacted under each table
+        </li>
+      </ol>
     </div>
 
+    <div class="changer">
+      <div class="container-pharse">
+        <textarea placeholder="Place here your phrases" class="text_area board_match" name="board_match"
+          id="board_match" cols="1"></textarea>
+        <div class="container-pharse-buttons">
+          <button class="copy-phrase copy">Copy phrase</button>
+          <button class="generator copy">Generate</button>
+          <button class="clear copy">Clear</button>
+        </div>
+      </div>
+      <div class="container-marks">
+        <textarea placeholder="Here will generate phrases  in 'quotation marks'" class="text_area phrase_box"
+          name="phrase_match" id="phrase_box" cols="1"></textarea>
+        <button class="copy-phrase-match copy">Copy phrase match</button>
+      </div>
+      <div class="container-bracekts">
+        <textarea placeholder="Here will generate phrases  in [square brackets]" class="text_area" name="exact_match"
+          id="match_box" cols="1"></textarea>
+        <button class="copy-exact-match copy">Copy exact match</button>
+      </div>
+    </div>
     <footer>
-        <p>Author: Jakub Kuźnik</p>
-        
-    </footer> 
-    <script src="main.js"></script>
+      <p>Author Jakub Kuźnik</p>
+    </footer>
+  </div>
+
+  <script src="main.js"></script>
 </body>
 
 </html>
-
-
